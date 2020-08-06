@@ -20,24 +20,174 @@
     <style></style>
   </head>
   <body>
-    <!-- Start your project here-->
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center" style="height: 100vh;">
-        <div class="text-center">
-          <img
-            src="https://mdbootstrap.com/img/logo/mdb-transparent-250px.png"
-            style="width: 250px; height: 90px;"
-          />
-          <h5 class="pt-3">Thank you for using our product. We're glad you're with us.</h5>
-          <p class="pb-5">MDB Team</p>
-        </div>
+
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!-- Container wrapper -->
+  <div class="container-fluid">
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">KatKHM.uz</a>
+
+    <!-- Toggle button -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Collapsible wrapper -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <!-- Left links -->
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Bosh sahifa</a>
+        </li>
+        <!-- Navbar dropdown -->
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Rahbariyat
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Markaz Direktori</a></li>
+            <li><a class="dropdown-item" href="#">O`IBDO</a></li>
+            <li><a class="dropdown-item" href="#">MMBIDO</a></li>
+            <li><a class="dropdown-item" href="#">MMBIDO</a></li>
+            <li><a class="dropdown-item" href="#">ICHIBDO</a></li>
+            <li><a class="dropdown-item" href="#">XIBDO</a></li>
+            <li><a class="dropdown-item" href="#">Bosh hisobchi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Ma’lumotlar
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Qonunlar</a></li>
+            <li><a class="dropdown-item" href="#">Farmonlar</a></li>
+            <li><a class="dropdown-item" href="#">Qarorlar</a></li>
+            <li><a class="dropdown-item" href="#">Nizomlar va qoidalar</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Talabalar
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Yo`riqnoma</a></li>
+            <li><a class="dropdown-item" href="#">Dars jadvali</a></li>
+            <li><a class="dropdown-item" href="#">Davomat</a></li>
+            <li><a class="dropdown-item" href="#">Iqtidorli talabalar</a></li>
+            <li><a class="dropdown-item" href="#">Davlat imtihonlari</a></li>
+            <li><a class="dropdown-item" href="#">Bitiruv malakaviy ish himoyasi</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            id="navbarDropdown"
+            role="button"
+            data-toggle="dropdown"
+            aria-expanded="false"
+          >
+            Faoliyatlar
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Ilmiy Faoliyat</a></li>
+            <li><a class="dropdown-item" href="#">Madaniyat va Marifiy</a></li>
+          </ul>
+        </li>
+
+      </ul>
+      <!-- Left links -->
+
+      <form class="d-flex input-group w-auto">
+        <input
+          type="search"
+          class="form-control"
+          aria-label="Qidirish"
+        />
+        <button class="btn btn-outline-success" type="button" data-ripple-color="dark">
+           <i class="fas fa-search"></i> Qidirish
+        </button>
+      </form>
+    </div>
+    <!-- Collapsible wrapper -->
+  </div>
+  <!-- Container wrapper -->
+</nav>
+</header>
+
+<footer>
+  <nav class="navbar fixed-bottom navbar-light bg-light">
+<div class="d-flex justify-content-center">
+
+  <button
+    type="button"
+    class="btn btn-success"
+    data-toggle="modal"
+    data-target="#tezAzo"
+  >
+    + O'qishga tez a'zo bo'lish
+  </button>
+
+</div>
+</nav>
+</footer>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="tezAzo"
+  tabindex="-1"
+  aria-labelledby="tezAzoLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="tezAzoLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
       </div>
     </div>
-    <!-- End your project here-->
+  </div>
+</div>
   </body>
 
   <!-- MDB -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script src="js/mdb.min.js"></script>
   <!-- Custom scripts -->
-  <script type="text/javascript"></script>
+  <script></script>
 </html>
