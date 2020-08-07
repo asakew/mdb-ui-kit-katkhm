@@ -4,31 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Material Design for Bootstrap</title>
-    <!-- MDB icon -->
+    <title>KatKHM / Material Design for Bootstrap</title>
     <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-    <!-- Google Fonts Roboto -->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
     />
-    <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
-    <!-- Custom styles -->
     <style></style>
   </head>
   <body>
 
 <header>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <!-- Container wrapper -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
   <div class="container-fluid">
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">KatKHM.uz</a>
+    <a class="navbar-brand mb-0 h1" href="#">KatKHM.uz</a>
 
-    <!-- Toggle button -->
     <button
       class="navbar-toggler"
       type="button"
@@ -41,14 +33,11 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <!-- Collapsible wrapper -->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <!-- Left links -->
       <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link active" href="#">Bosh sahifa</a>
         </li>
-        <!-- Navbar dropdown -->
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle"
@@ -126,7 +115,6 @@
         </li>
 
       </ul>
-      <!-- Left links -->
 
       <form class="d-flex input-group w-auto">
         <input
@@ -134,35 +122,33 @@
           class="form-control"
           aria-label="Qidirish"
         />
-        <button class="btn btn-outline-success" type="button" data-ripple-color="dark">
+        <button class="btn btn-outline-white text-light" type="button" data-ripple-color="dark">
            <i class="fas fa-search"></i> Qidirish
         </button>
       </form>
     </div>
-    <!-- Collapsible wrapper -->
   </div>
-  <!-- Container wrapper -->
 </nav>
+
+
 </header>
 
-<footer>
-  <nav class="navbar fixed-bottom navbar-light bg-light">
-<div class="d-flex justify-content-center">
+<footer class="fixed-bottom">
 
-  <button
-    type="button"
-    class="btn btn-success"
-    data-toggle="modal"
-    data-target="#tezAzo"
-  >
-    + O'qishga tez a'zo bo'lish
-  </button>
-
+<div class="container-fluid">
+  <div class="d-flex justify-content-center mb-3">
+    <button
+      type="button"
+      class="btn btn-success btn-rounded w-50"
+      data-toggle="modal"
+      data-target="#tezAzo"
+    >
+      + O'qishga tez a'zo bo'lish
+    </button>
+  </div>
 </div>
-</nav>
 </footer>
 
-<!-- Modal -->
 <div
   class="modal fade"
   id="tezAzo"
@@ -186,8 +172,6 @@
 </div>
   </body>
 
-  <!-- MDB -->
   <script src="js/mdb.min.js"></script>
-  <!-- Custom scripts -->
   <script></script>
 </html>
