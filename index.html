@@ -1,177 +1,157 @@
 <!DOCTYPE html>
 <html lang="uz-UZ">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>KatKHM / Material Design for Bootstrap</title>
-    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>KatKHM Material Design for Bootstrap</title>
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
-    />
-    <link rel="stylesheet" href="css/mdb.min.css" />
-    <style></style>
+    >
+    <link rel="stylesheet" href="css/mdb.min.css">
   </head>
   <body>
 
+
+
+<style>
+
+  html,
+  body,
+  header,
+  .view {
+    height: 100%;
+  }
+
+  @media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+      height: 100vh;
+    }
+  }
+
+  .top-nav-collapse {
+    background-color: #82b1ff !important;
+  }
+
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+
+  @media (max-width: 991px) {
+   .navbar:not(.top-nav-collapse) {
+    background: #82b1ff !important;
+   }
+  }
+  
+  h5 {
+    letter-spacing: 3px;
+  }
+
+</style>
+
+<!-- Main navigation -->
 <header>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-  <div class="container-fluid">
-    <a class="navbar-brand mb-0 h1" href="#">KatKHM.uz</a>
-
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" href="#">Bosh sahifa</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Rahbariyat
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Markaz Direktori</a></li>
-            <li><a class="dropdown-item" href="#">O`IBDO</a></li>
-            <li><a class="dropdown-item" href="#">MMBIDO</a></li>
-            <li><a class="dropdown-item" href="#">MMBIDO</a></li>
-            <li><a class="dropdown-item" href="#">ICHIBDO</a></li>
-            <li><a class="dropdown-item" href="#">XIBDO</a></li>
-            <li><a class="dropdown-item" href="#">Bosh hisobchi</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Ma’lumotlar
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Qonunlar</a></li>
-            <li><a class="dropdown-item" href="#">Farmonlar</a></li>
-            <li><a class="dropdown-item" href="#">Qarorlar</a></li>
-            <li><a class="dropdown-item" href="#">Nizomlar va qoidalar</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Talabalar
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Yo`riqnoma</a></li>
-            <li><a class="dropdown-item" href="#">Dars jadvali</a></li>
-            <li><a class="dropdown-item" href="#">Davomat</a></li>
-            <li><a class="dropdown-item" href="#">Iqtidorli talabalar</a></li>
-            <li><a class="dropdown-item" href="#">Davlat imtihonlari</a></li>
-            <li><a class="dropdown-item" href="#">Bitiruv malakaviy ish himoyasi</a></li>
-          </ul>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Faoliyatlar
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Ilmiy Faoliyat</a></li>
-            <li><a class="dropdown-item" href="#">Madaniyat va Marifiy</a></li>
-          </ul>
-        </li>
-
-      </ul>
-
-      <form class="d-flex input-group w-auto">
-        <input
-          type="search"
-          class="form-control"
-          aria-label="Qidirish"
-        />
-        <button class="btn btn-outline-white text-light" type="button" data-ripple-color="dark">
-           <i class="fas fa-search"></i> Qidirish
-        </button>
-      </form>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <strong>MDB</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7"
+        aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Profile</a>
+          </li>
+        </ul>
+        <form class="form-inline">
+          <div class="md-form my-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          </div>
+        </form>
+      </div>
     </div>
+  </nav>
+  <!-- Navbar -->
+  <!-- Full Page Intro -->
+  <div class="view jarallax" data-jarallax='{"speed": 0.2}' style="background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+    <!-- Mask & flexbox options-->
+    <div class="mask rgba-white-light d-flex justify-content-center align-items-center">
+      <!-- Content -->
+      <div class="container">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-md-12 white-text text-center">
+            <h1 class="display-3 mb-0 pt-md-5 pt-5 white-text font-weight-bold wow fadeInDown" data-wow-delay="0.3s">NATALIE
+              <a class="indigo-text font-weight-bold">SMITH</a>
+            </h1>
+            <h5 class="text-uppercase pt-md-5 pt-sm-2 pt-5 pb-md-5 pb-sm-3 pb-5 white-text font-weight-bold wow fadeInDown"
+              data-wow-delay="0.3s">Web developer & graphic designer</h5>
+            <div class="wow fadeInDown" data-wow-delay="0.3s">
+              <a class="btn btn-light-blue btn-lg btn-rounded">portfolio</a>
+              <a class="btn btn-indigo btn-lg btn-rounded">About me</a>
+            </div>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </div>
+      <!-- Content -->
+    </div>
+    <!-- Mask & flexbox options-->
   </div>
-</nav>
-
-
+  <!-- Full Page Intro -->
 </header>
+<!-- Main navigation -->
 
-<footer class="fixed-bottom">
+<div class="text-center fixed-bottom mb-2">
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary btn-rounded w-50" data-toggle="modal" data-target="#azobolish">Tezkor A'zo bo'lish </button>
 
-<div class="container-fluid">
-  <div class="d-flex justify-content-center mb-3">
-    <button
-      type="button"
-      class="btn btn-success btn-rounded w-50"
-      data-toggle="modal"
-      data-target="#tezAzo"
-    >
-      + O'qishga tez a'zo bo'lish
-    </button>
-  </div>
 </div>
-</footer>
 
-<div
-  class="modal fade"
-  id="tezAzo"
-  tabindex="-1"
-  aria-labelledby="tezAzoLabel"
-  aria-hidden="true"
->
-  <div class="modal-dialog modal-lg">
+<div class="modal fade" id="azobolish" tabindex="-1" aria-labelledby="AzoBolishLabel" aria-hidden="true">
+  <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="tezAzoLabel">Modal title</h5>
+        <h5 class="modal-title" id="AzoBolishLabel">A'zo bo'lish</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        ...
+       <?php
+if (function_exists("add_formcraft_form")) {
+add_formcraft_form("[fc id='1'][/fc]");
+}
+?>
       </div>
     </div>
   </div>
-</div>
+</div>  
+
   </body>
 
   <script src="js/mdb.min.js"></script>
-  <script></script>
+  <script>
+      new WOW().init();
+  </script>
 </html>
